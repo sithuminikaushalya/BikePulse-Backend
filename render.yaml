@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: my-spring-boot-app
+    env: java
+    plan: free
+    buildCommand: mvn clean package
+    startCommand: java -jar target/my-spring-boot-app.jar
